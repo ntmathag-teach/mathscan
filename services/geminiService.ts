@@ -11,7 +11,7 @@ const processFileWithGemini = async (fileData: FileData): Promise<string> => {
 
   // 2. Khởi tạo SDK chuẩn (@google/generative-ai)
   const genAI = new GoogleGenerativeAI(API_KEY);
-  const model = genAI.getGenerativeModel({ model: "gemma-4-31b" });
+  const model = genAI.getGenerativeModel({ model: "gemma-4-31b-it" });
 
   try {
     // 3. Chuẩn bị ảnh
